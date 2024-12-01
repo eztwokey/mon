@@ -1,13 +1,13 @@
 import getpass
 import poplib
 
-# Настройки для подключения к mail.ru
-pop3_server = 'pop.mail.ru'
-username = 'azaza8989@bk.ru'  # Укажите полный адрес электронной почты
+# Настройки для подключения к Outlook
+pop3_server = 'outlook.office365.com'
+username = 'eztwokey@bk.ru'  # Укажите полный адрес электронной почты
 password = 'agent123zxc9'  # Ваш пароль
 
 try:
-    # Подключаемся к POP3-серверу mail.ru
+    # Подключаемся к POP3-серверу Outlook
     M = poplib.POP3_SSL(pop3_server)
     
     # Входим в почтовый ящик
@@ -31,6 +31,3 @@ try:
 
 except Exception as e:
     print("Ошибка подключения:", e)
-
-    ##email = 'azaza8989@bk.ru'  # Ваш адрес электронной почты
-##password = 'agent123zxc9'  # Ваш пароль
